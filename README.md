@@ -1,6 +1,6 @@
 # Scrollytelling
 
-[![Build Status](https://travis-ci.org/jackdbd/scrollytelling.svg?branch=master)](https://travis-ci.org/jackdbd/scrollytelling) [![codecov](https://codecov.io/gh/jackdbd/scrollytelling/branch/master/graph/badge.svg)](https://codecov.io/gh/jackdbd/scrollytelling) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovateapp.com/)
+[![Build Status](https://travis-ci.org/jackdbd/scrollytelling.svg?branch=master)](https://travis-ci.org/jackdbd/scrollytelling) [![codecov](https://codecov.io/gh/jackdbd/scrollytelling/branch/master/graph/badge.svg)](https://codecov.io/gh/jackdbd/scrollytelling) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovateapp.com/) [![Dependencies](https://david-dm.org/jackdbd/scrollytelling.svg)](https://david-dm.org/jackdbd/scrollytelling)
 
 
 # Installation

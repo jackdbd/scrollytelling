@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 import { PropagateLoader } from "react-spinners";
-import { Scrollama } from "./Scrollama";
+import { scaleLinear, scaleBand } from "d3-scale";
+// import { Scrollama } from "./Scrollama";
 import { Intro, ScreenA, ScreenB, Outro } from "./Screens";
+// import { StepA, StepB } from "./Steps";
+import { BarChart, ResponsiveBarChart } from "./Graphics";
+
+const barData = [{ x: 10, y: "A" }, { x: 20, y: "B" }, { x: 50, y: "C" }];
+const barScales = {
+  x: scaleLinear().domain([0, 100]),
+  y: scaleBand().domain(["A", "B", "C"])
+};
 
 class App extends Component {
   state = {
@@ -26,6 +35,8 @@ class App extends Component {
     return (
       <div className="App">
         <Intro fontFamily={"Lobster"} />
+        <BarChart data={barData} scales={barScales} />
+        <ResponsiveBarChart data={barData} scales={barScales} showDebug />
         {stories.length > 0 ? (
           <div>TODO: scrollama component here</div>
         ) : (
