@@ -110,7 +110,7 @@ class App extends Component {
       return opt;
     });
     return (
-      <div className="App">
+      <div>
         <Intro fontFamily={"Lobster"} />
         {stories.length > 0 ? (
           <Scrollama
