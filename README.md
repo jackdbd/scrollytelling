@@ -10,6 +10,14 @@
 ![A GIF file showing a short demo on a mobile screen](https://github.com/jackdbd/scrollytelling/blob/master/screenshots/demo-mobile.gif "Mobile")
 
 
+Built with:
+
+- [React](https://reactjs.org/)
+- [scrollama](https://github.com/russellgoldenberg/scrollama)
+- [D3](https://d3js.org/)
+- [vx](https://vx-demo.now.sh/)
+
+
 ### Installation
 
 ```
