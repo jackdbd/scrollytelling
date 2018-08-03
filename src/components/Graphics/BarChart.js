@@ -16,6 +16,7 @@ function BarChart(props) {
     scales,
     accessors,
     axisFormatSpecifiers,
+    xLabel,
     showDebug,
     handleMouseOver
   } = props;
@@ -90,7 +91,7 @@ function BarChart(props) {
           top={innerHeight}
           left={0}
           scale={xScale}
-          label="X Label"
+          label={xLabel}
           labelProps={{
             fontSize: "1.0rem",
             x: `${innerWidth}px`,
@@ -114,13 +115,14 @@ function BarChart(props) {
 
 BarChart.defaultProps = {
   width: 600,
-  height: 400,
+  height: 300,
   margin: {
     top: 20,
     right: 25,
     bottom: 40,
     left: 30
   },
+  xLabel: "",
   data: [],
   accessors: {
     x: d => d.x,
@@ -142,6 +144,7 @@ BarChart.propTypes = {
     bottom: PropTypes.number.isRequired,
     left: PropTypes.number.isRequired
   }),
+  xLabel: PropTypes.string,
   data: PropTypes.array.isRequired,
   accessors: PropTypes.objectOf(PropTypes.func).isRequired,
   scales: PropTypes.objectOf(PropTypes.func).isRequired,
